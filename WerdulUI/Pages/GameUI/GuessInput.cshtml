@@ -1,0 +1,64 @@
+﻿@page
+@model WerdulUI.Pages.GameUI.GameUIModel
+@{
+    ViewData["Title"] = "Werdul";
+}
+<!--TO DO: Finish this Javascript function. Why isn't this setting focus on the next element?-->
+<script type="text/javascript">
+    function changeFocus(textBoxId){
+        debugger;
+        let columnNumber = textBoxId.substring(textBoxId.length - 1, 1);
+        let newTextBoxId = textBoxId;
+        if (columnNumber < 5){
+            newTextBoxId = textBoxId.replace("-" + columnNumber, "-" + columnNumber + 1)
+        }
+        var nextTextBoxToFocus = document.getElementById(newTextBoxId);
+        nextTextBoxToFocus.focus();
+    };
+</script>
+
+<form>
+    <div>
+        <input id=textbox1-1 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" maxlength="1" onkeyup="if(this.value.length > 0 {changeFocus(this.id)}" />
+        <input id=textbox1-2 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" />
+        <input id=textbox1-3 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" />
+        <input id=textbox1-4 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" />
+        <input id=textbox1-5 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" />
+    </div>
+    <div>
+        <input id=textbox2-1 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled"/>
+        <input id=textbox2-2 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox2-3 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox2-4 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox2-5 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+    </div>
+    <div>
+        <input id=textbox3-1 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox3-2 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox3-3 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox3-4 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox3-5 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+    </div>
+    <div>
+        <input id=textbox4-1 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox4-2 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox4-3 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox4-4 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox4-5 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+    </div>
+    <div>
+        <input id=textbox5-1 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox5-2 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox5-3 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox5-4 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox5-5 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+    </div>
+    <div>
+        <input id=textbox6-1 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox6-2 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox6-3 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox6-4 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+        <input id=textbox6-5 type="text" class="text-center" style="height: 100px; width: 100px; font-size:45px; font-weight:800" disabled="disabled" />
+    </div>
+
+</form>

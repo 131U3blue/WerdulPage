@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "da11200d-f7ce-4606-8c0f-da32c05d56a9": {
+      "ProjectGuid": "da11200d-f7ce-4606-8c0f-da32c05d56a9",
+      "DisplayName": "WerdulUI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
